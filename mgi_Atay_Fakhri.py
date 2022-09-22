@@ -4,7 +4,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import time
-#################################################
+############################################
 # Calcul du MGD du robot RRR
 # INPUT: q = vecteur de configuration (radian, radian, radian)
 # OUTPUT: Xc = vecteur de situation = (x,y, theta)
