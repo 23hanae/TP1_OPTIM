@@ -53,6 +53,9 @@ def jacobienne(qrad):
   [1, 1, 1]])
   return Ja
 
+
+
+  
 ###################################################################################
 # Afin de donner une situation atteignable pour le robot,
 # vous pouvez utiliser le mgd pour définir Xbut à partir d’une configuration en q
@@ -74,10 +77,10 @@ def dessinRRR(q) :
   xD, yD = (np.cos(q[0]) + np.cos(q[0]+q[1]) + np.cos(q[0]+q[1]+q[2])),(np.sin(q[0]) + np.sin(q[0]+q[1]) + np.sin(q[0]+q[1]+q[2]))
   X=[xA, xB,xC,xD]
   Y=[yA,yB,yC,yD]
-plt.plot(X,Y, color="orange", lw=10, alpha=0.5, marker="o", markersize=20, mfc="red")
-plt.axis('equal')
-plt.axis('off')
-plt.show()
+  plt.plot(X,Y, color="blue", lw=10, alpha=0.6, marker="o", markersize=20, mfc="red")
+  plt.axis('equal')
+  plt.axis('off')
+  plt.show()
 ################################################
 ############ Exemple d’affichage
 dessinRRR(np.radians(qbutdeg))
@@ -98,17 +101,17 @@ Xinit=np.asarray(mgd(qinit))
 print("Xinit = ",Xinit)
 
 ##### A CODER
-##q= qinit
-##i=0
+#q= qinit
+#i=0
 ##
 ##
-##nbpas= ???
-##epsx= ???
+#nbpas= ???
+#epsx= ???
 ## erx = valeur initale de du critère qu’on cherche à minimiser
-##list_erreur = [erx] #
-##start_time = time.process_time()
-##while (????):
-## direction = ???
+#list_erreur = [erx] 
+#start_time = time.process_time()
+#while (????):
+#direction = -
 ## pas= ???
 ## ...
 ## ...
